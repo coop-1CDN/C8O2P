@@ -215,11 +215,8 @@
         .hero-bg {
             position: absolute;
             inset: 0;
-            background: url('Caficultor.webp') center/cover;
+            background: url('Caficultor.jpg') center/cover;
             z-index: -2;
-            /* Parallax effect properties */
-            will-change: transform;
-            transition: transform 0.1s ease-out;
         }
 
         .hero-overlay {
@@ -771,7 +768,7 @@
                 </div>
                 
                 <div class="slide-in-left visible">
-                    <img src="Cafetero.webp" alt="Coffee farmers checking on the cultivation" class="why-image">
+                    <img src="Cafetero.jpg" alt="Coffee farmers checking on the cultivation" class="why-image">
                     <p class="meta" style="margin-top: 16px;">Photo: Coffee harvest • Huila, Colombia</p>
                 </div>
             </div>
@@ -788,19 +785,19 @@
 
             <div class="pillars-grid">
                 <div class="pillar-card visible" style="transition-delay: 0s;">
-                    <img src="Dual use technology.webp" alt="Community coffee processing hub" class="pillar-icon">
+                    <img src="Dual use technology.jpg" alt="Community coffee processing hub" class="pillar-icon">
                     <h3 class="serif" data-i18n="pillars.infrastructure.title">Dual-use infrastructure</h3>
                     <p data-i18n="pillars.infrastructure.description">Community hubs that serve as roasters, training centers and digital access points. These assets serve both commerce and community — education by day, market logistics by harvest.</p>
                 </div>
 
                 <div class="pillar-card visible" style="transition-delay: 0.1s;">
-                    <img src="Smart, hybrid tech.webp" alt="Farmer using mobile technology" class="pillar-icon">
+                    <img src="Smart, hybrid tech.jpg" alt="Farmer using mobile technology" class="pillar-icon">
                     <h3 class="serif" data-i18n="pillars.technology.title">Smart, hybrid tech</h3>
                     <p data-i18n="pillars.technology.description">Satellite imagery + local sensors + lightweight, offline-first apps provide real-time weather alerts, disease warnings, and crop health dashboards — accessible under a fair-access license.</p>
                 </div>
 
                 <div class="pillar-card visible" style="transition-delay: 0.2s;">
-                    <img src="Poder colectivo de mercado.webp" alt="Collective effort and solidarity" class="pillar-icon">
+                    <img src="Poder colectivo de mercado.jpg" alt="Collective effort and solidarity" class="pillar-icon">
                     <h3 class="serif" data-i18n="pillars.collective.title">Collective market power</h3>
                     <p data-i18n="pillars.collective.description">Cooperative bargaining, transparent lot traceability, and curated origin stories that allow farmers to capture premiums where quality and provenance matter.</p>
                 </div>
@@ -848,7 +845,7 @@
 
             <div class="stories-grid" id="farmer-stories">
                 <article class="story-card">
-                    <img src="story1.webp" alt="I harvest at dawn so my children can study. Raíz helped us with better drying and direct buyers." class="story-image" loading="lazy">
+                    <img src="story1.jpg" alt="I harvest at dawn so my children can study. Raíz helped us with better drying and direct buyers." class="story-image" loading="lazy">
                     <div class="story-content">
                         <div class="meta">Huila • María</div>
                         <p style="margin: 16px 0;">"I harvest at dawn so my children can study. Raíz helped us with better drying and direct buyers."</p>
@@ -856,7 +853,7 @@
                     </div>
                 </article>
                 <article class="story-card">
-                    <img src="cafe tostado.webp" alt="Our hub is where we roast, learn and pack for export. It changed everything for our cooperative." class="story-image" loading="lazy">
+                    <img src="cafe tostado.jpg" alt="Our hub is where we roast, learn and pack for export. It changed everything for our cooperative." class="story-image" loading="lazy">
                     <div class="story-content">
                         <div class="meta">Nariño • Carlos</div>
                         <p style="margin: 16px 0;">"Our hub is where we roast, learn and pack for export. It changed everything for our cooperative."</p>
@@ -864,7 +861,7 @@
                     </div>
                 </article>
                 <article class="story-card">
-                    <img src="happy.webp" alt="Simple weather alerts help us avoid losses and prepare better. Knowledge is power." class="story-image" loading="lazy">
+                    <img src="happy.jpg" alt="Simple weather alerts help us avoid losses and prepare better. Knowledge is power." class="story-image" loading="lazy">
                     <div class="story-content">
                         <div class="meta">Tolima • Ana</div>
                         <p style="margin: 16px 0;">"Simple weather alerts help us avoid losses and prepare better. Knowledge is power."</p>
@@ -1212,11 +1209,14 @@
         };
 
         function changeLanguage(lang) {
-            const elements = document.querySelectorAll('[data-i18n]');
-            elements.forEach(element => {
+            document.querySelectorAll('[data-i18n]').forEach(element => {
                 const key = element.getAttribute('data-i18n');
                 if (translations[lang] && translations[lang][key]) {
-                    element.innerHTML = translations[lang][key];
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        element.value = translations[lang][key];
+                    } else {
+                        element.innerHTML = translations[lang][key];
+                    }
                 }
             });
         }
@@ -1233,37 +1233,8 @@
             });
         }
 
-        // Initialize scroll animations
         window.addEventListener('scroll', checkScroll);
         window.addEventListener('load', checkScroll);
-
-        // Hero background parallax effect
-        function setupParallax() {
-            const heroBg = document.querySelector('.hero-bg');
-            let lastScrollTop = 0;
-            
-            window.addEventListener('scroll', function() {
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                const scrollDirection = scrollTop > lastScrollTop ? 'down' : 'up';
-                lastScrollTop = scrollTop;
-                
-                // Only apply the effect when scrolling down
-                if (scrollDirection === 'down') {
-                    // Calculate the parallax effect based on scroll position
-                    const scrolled = scrollTop;
-                    const parallaxSpeed = 0.3; // Adjust this value to control the speed
-                    const moveX = scrolled * parallaxSpeed;
-                    
-                    // Apply the transform to move the background left
-                    heroBg.style.transform = `translateX(-${moveX}px)`;
-                }
-            });
-        }
-
-        // Initialize the parallax effect
-        document.addEventListener('DOMContentLoaded', function() {
-            setupParallax();
-        });
     </script>
 </body>
 </html>
