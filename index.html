@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>.lw { font-size: 60px; }</style>
-</head>
-<body>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raíz — Rooted in Colombia. Crafted for the world.</title>
     <meta name="description" content="Raíz strengthens farmer livelihoods by combining time-tested knowledge with precise, dual-use technology — tools that teach, protect and sell.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <style>
         :root {
             --cream: #F9F6F0;
@@ -71,8 +68,8 @@
         /* Language Toggle */
         .lang-toggle {
             position: fixed;
-            top: 24px;
-            right: 24px;
+            top: 16px;
+            right: 16px;
             z-index: 1000;
             background: rgba(255,255,255,0.95);
             backdrop-filter: blur(10px);
@@ -111,34 +108,34 @@
         }
 
         h1 {
-            font-size: clamp(2.75rem, 5vw, 4.5rem);
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
             margin-bottom: 24px;
             opacity: 0;
             animation: fadeInUp 1.2s ease-out 0.5s forwards;
         }
 
         h2 {
-            font-size: clamp(2rem, 3vw, 3rem);
-            margin-bottom: 32px;
+            font-size: clamp(1.8rem, 3vw, 3rem);
+            margin-bottom: 24px;
         }
 
         h3 {
-            font-size: 1.75rem;
+            font-size: 1.5rem;
             margin-bottom: 16px;
         }
 
         p {
-            margin: 0 0 24px 0;
+            margin: 0 0 20px 0;
             color: var(--charcoal);
             font-weight: 400;
             font-size: 1.05rem;
         }
 
         .lead {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             line-height: 1.7;
             color: rgba(255,255,255,0.95);
-            margin-bottom: 40px;
+            margin-bottom: 32px;
             opacity: 0;
             animation: fadeInUp 1.2s ease-out 0.8s forwards;
         }
@@ -160,12 +157,12 @@
         /* Buttons */
         .cta {
             display: inline-block;
-            padding: 16px 32px;
+            padding: 14px 28px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 500;
             font-size: 1rem;
-            margin: 8px 16px 8px 0;
+            margin: 8px 12px 8px 0;
             transition: all 0.3s ease;
             border: 2px solid transparent;
             text-align: center;
@@ -200,6 +197,7 @@
         .cta-group {
             opacity: 0;
             animation: fadeInUp 1.2s ease-out 1.1s forwards;
+            margin-top: 20px;
         }
 
         /* Hero Section */
@@ -211,6 +209,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            padding-top: 70px; /* Added padding for mobile */
         }
 
         .hero-bg {
@@ -233,11 +232,12 @@
             z-index: 1;
             padding: 0 24px;
             max-width: 900px;
+            margin-top: 20px; /* Added margin for mobile */
         }
 
         .hero-subtitle {
             font-size: 1rem;
-            margin-top: 40px;
+            margin-top: 32px;
             opacity: 0.9;
             opacity: 0;
             animation: fadeInUp 1.2s ease-out 1.4s forwards;
@@ -245,7 +245,7 @@
 
         /* Sections */
         .section {
-            padding: var(--section-spacing) 0;
+            padding: 80px 0;
             position: relative;
         }
 
@@ -255,13 +255,13 @@
 
         .section-title {
             text-align: center;
-            margin-bottom: 80px;
+            margin-bottom: 60px;
         }
 
         /* Why Section */
         .why-grid {
             display: grid;
-            gap: 80px;
+            gap: 60px;
             grid-template-columns: 1fr;
             align-items: center;
         }
@@ -274,7 +274,7 @@
 
         .why-image {
             width: 100%;
-            height: 500px;
+            height: 400px;
             object-fit: cover;
             border-radius: 16px;
             box-shadow: var(--shadow-medium);
@@ -288,9 +288,9 @@
         /* Pillars */
         .pillars-grid {
             display: grid;
-            gap: 40px;
+            gap: 30px;
             grid-template-columns: 1fr;
-            margin-top: 64px;
+            margin-top: 40px;
         }
 
         @media (min-width: 640px) {
@@ -307,7 +307,7 @@
 
         .pillar-card {
             background: white;
-            padding: 40px 32px;
+            padding: 30px 24px;
             border-radius: 16px;
             box-shadow: var(--shadow-soft);
             transition: all 0.4s ease;
@@ -331,10 +331,10 @@
 
         .pillar-icon {
             width: 100%;
-            height: 200px;
+            height: 180px;
             object-fit: cover;
             border-radius: 12px;
-            margin-bottom: 32px;
+            margin-bottom: 24px;
             filter: grayscale(20%);
             transition: filter 0.3s ease;
         }
@@ -346,9 +346,9 @@
         /* Stories */
         .stories-grid {
             display: grid;
-            gap: 40px;
+            gap: 30px;
             grid-template-columns: 1fr;
-            margin-top: 48px;
+            margin-top: 40px;
         }
 
         @media (min-width: 768px) {
@@ -379,7 +379,7 @@
 
         .story-image {
             width: 100%;
-            height: 280px;
+            height: 240px;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
@@ -389,7 +389,7 @@
         }
 
         .story-content {
-            padding: 32px;
+            padding: 24px;
         }
 
         /* Join Section */
@@ -397,9 +397,9 @@
             background: linear-gradient(135deg, var(--accent-green) 0%, var(--accent-green-hover) 100%);
             color: white;
             text-align: center;
-            padding: 100px 60px;
+            padding: 80px 40px;
             border-radius: 24px;
-            margin: 80px 0;
+            margin: 60px 0;
             position: relative;
             overflow: hidden;
         }
@@ -420,13 +420,13 @@
 
         .join-cta h2 {
             color: white;
-            margin-bottom: 32px;
+            margin-bottom: 24px;
         }
 
         .join-cta p {
             color: rgba(255,255,255,0.9);
-            font-size: 1.2rem;
-            margin-bottom: 40px;
+            font-size: 1.1rem;
+            margin-bottom: 32px;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
@@ -436,7 +436,7 @@
         .footer {
             background: var(--soft-black);
             color: rgba(255,255,255,0.8);
-            padding: 80px 0 40px;
+            padding: 60px 0 30px;
             text-align: center;
         }
 
@@ -446,9 +446,9 @@
         }
 
         .footer-logo {
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 600;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
             color: white;
             font-family: 'Crimson Text', serif;
         }
@@ -488,26 +488,149 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+            
             .hero {
                 min-height: 600px;
+                padding-top: 60px; /* Added for mobile */
+            }
+            
+            .hero-content {
+                margin-top: 15px; /* Added for mobile */
             }
 
             .section {
                 padding: 60px 0;
             }
-
-            .container {
-                padding: 0 20px;
-            }
-
+            
             .cta {
                 display: block;
-                margin: 16px 0;
-                text-align: center;
+                margin: 12px 0;
+                width: 100%;
+                padding: 16px 24px;
+            }
+            
+            .cta-group {
+                margin-top: 15px;
+            }
+            
+            .why-image {
+                height: 300px;
+            }
+            
+            .pillar-card {
+                padding: 24px 20px;
+            }
+            
+            .pillar-icon {
+                height: 160px;
+            }
+            
+            .story-image {
+                height: 200px;
             }
             
             .join-cta {
-                padding: 60px 30px;
+                padding: 50px 24px;
+                margin: 40px 0;
+            }
+            
+            .footer {
+                padding: 50px 0 24px;
+            }
+            
+            /* Ensure text doesn't get too close to edges */
+            .hero-content, .section-title, .story-content, .pillar-card {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+            
+            /* Adjust font sizes for mobile */
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.7rem;
+            }
+            
+            h3 {
+                font-size: 1.4rem;
+            }
+            
+            .lead {
+                font-size: 1.1rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+            
+            /* Language toggle adjustments */
+            .lang-toggle {
+                top: 12px;
+                right: 12px;
+            }
+            
+            .lang-select {
+                padding: 6px 10px;
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                min-height: 500px;
+                padding-top: 50px;
+            }
+            
+            .hero-content {
+                margin-top: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+            
+            .lead {
+                font-size: 1rem;
+                margin-bottom: 24px;
+            }
+            
+            .cta {
+                padding: 14px 20px;
+                font-size: 0.95rem;
+            }
+            
+            .why-image {
+                height: 250px;
+            }
+            
+            .section {
+                padding: 50px 0;
+            }
+            
+            .section-title {
+                margin-bottom: 40px;
+            }
+            
+            .pillar-icon {
+                height: 140px;
+            }
+            
+            .story-image {
+                height: 180px;
+            }
+            
+            .join-cta {
+                padding: 40px 20px;
+            }
+            
+            .footer {
+                padding: 40px 0 20px;
             }
         }
 
@@ -520,7 +643,7 @@
         /* Scroll indicators */
         .scroll-indicator {
             position: absolute;
-            bottom: 32px;
+            bottom: 24px;
             left: 50%;
             transform: translateX(-50%);
             color: rgba(255,255,255,0.8);
@@ -548,14 +671,14 @@
         }
         
         .stat-number {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 600;
             color: var(--accent-green);
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         
         .stat-label {
-            font-size: 1rem;
+            font-size: 0.9rem;
             color: var(--muted);
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -564,8 +687,8 @@
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 40px;
-            margin: 60px 0;
+            gap: 30px;
+            margin: 50px 0;
         }
         
         @media (min-width: 768px) {
@@ -573,8 +696,24 @@
                 grid-template-columns: repeat(4, 1fr);
             }
         }
+        
+        @media (max-width: 480px) {
+            .stats-grid {
+                gap: 20px;
+                margin: 40px 0;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+            
+            .stat-label {
+                font-size: 0.8rem;
+            }
+        }
     </style>
-
+</head>
+<body>
     <!-- Language Toggle -->
     <div class="lang-toggle">
         <select class="lang-select" onchange="changeLanguage(this.value)">
@@ -704,28 +843,32 @@
                 <p class="meta" data-i18n="stories.subtitle">Portraits and voices that connect you to the people behind each cup.</p>
             </div>
 
-            <div class="stories-grid" id="farmer-stories"><article class="story-card">
+            <div class="stories-grid" id="farmer-stories">
+                <article class="story-card">
                     <img src="story1.jpg" alt="I harvest at dawn so my children can study. Raíz helped us with better drying and direct buyers." class="story-image" loading="lazy">
                     <div class="story-content">
                         <div class="meta">Huila • María</div>
                         <p style="margin: 16px 0;">"I harvest at dawn so my children can study. Raíz helped us with better drying and direct buyers."</p>
                         <div class="meta">Photo: Community Stories Project</div>
                     </div>
-                </article><article class="story-card">
+                </article>
+                <article class="story-card">
                     <img src="cafe tostado.jpg" alt="Our hub is where we roast, learn and pack for export. It changed everything for our cooperative." class="story-image" loading="lazy">
                     <div class="story-content">
                         <div class="meta">Nariño • Carlos</div>
                         <p style="margin: 16px 0;">"Our hub is where we roast, learn and pack for export. It changed everything for our cooperative."</p>
                         <div class="meta">Photo: Field Documentation</div>
                     </div>
-                </article><article class="story-card">
+                </article>
+                <article class="story-card">
                     <img src="happy.jpg" alt="Simple weather alerts help us avoid losses and prepare better. Knowledge is power." class="story-image" loading="lazy">
                     <div class="story-content">
                         <div class="meta">Tolima • Ana</div>
                         <p style="margin: 16px 0;">"Simple weather alerts help us avoid losses and prepare better. Knowledge is power."</p>
                         <div class="meta">Photo: Technology Integration</div>
                     </div>
-                </article></div>
+                </article>
+            </div>
         </div>
     </section>
 
@@ -807,7 +950,7 @@
                 "pillars.title": "Cómo Creamos Impacto Duradero",
                 "pillars.subtitle": "Nos enfocamos en cambios prácticos y medibles, no en promesas. Nuestro modelo combina:",
                 "pillars.infrastructure.title": "Infraestructura de doble uso",
-                "pillars.infrastructure.description": "Centros comunitarios que sirven como tostadores, centros de capacitación y puntos de acceso digital. Estos activos sirven tanto al comercio como a la comunidad: educación de día, logística de mercado en cosecha.",
+                "pillars.infrastructure.description": "Centros comunitarios que sirven como tostadores, centros de capacitación y puntos de acceso digital. Estos activos sirven tanto al comercio como to the community — educación de día, logística de mercado en cosecha.",
                 "pillars.technology.title": "Tecnología híbrida inteligente",
                 "pillars.technology.description": "Imágenes satelitales + sensores locales + aplicaciones ligeras y sin conexión proporcionan alertas meteorológicas en tiempo real, advertencias de enfermedades and paneles de salud de cultivos, accesibles bajo una licencia de acceso justo.",
                 "pillars.collective.title": "Poder colectivo de mercado",
@@ -817,7 +960,7 @@
                 "stories.title": "Historias del campo",
                 "stories.subtitle": "Retratos y voces que te conectan con las personas detrás de cada taza.",
                 "join.title": "Únete al movimiento",
-                "join.description": "Una pequeña acción aquí tiene grandes efectos: ser voluntario o asesor con Raíz significa cambios más rápidos y medibles para las familias agricultoras y experiencia práctica diseñando proyectos donde se encuentran educación, comercio y tecnología.",
+                "join.description": "Una pequeña acción aquí tiene grandes efectos: ser voluntario or asesor con Raíz significa cambios más rápidos y medibles para las familias agricultoras y experiencia práctica diseñando proyectos donde se encuentran educación, comercio y tecnología.",
                 "join.volunteer": "Aplicar como Voluntario",
                 "join.advisory": "Aplicar a Junta Asesora",
                 "join.partner": "Aliarse con Nosotros",
@@ -835,7 +978,7 @@
                 "why.quote": "\"Une petite action ici a des effets lointains — aider les agriculteurs signifie aider les communautés à prospérer.\"",
                 "why.cta": "Rencontrer les Agriculteurs",
                 "pillars.title": "Comment Nous Créons un Impact Durable",
-                "pillars.subtitle": "Nous nous concentrons sur des changements pratiques et mesurables — pas des promesses. Notre modèle combine:",
+                "pillars.subtitle": "Nous nous concentrons sur des changements pratiques et mesurables — pas des promesses. Our model combines:",
                 "pillars.infrastructure.title": "Infrastructure à double usage",
                 "pillars.infrastructure.description": "Des centres communautaires qui servent de torréfacteurs, centres de formation et points d'accès numérique. Ces actifs servent à la fois le commerce et la communauté — éducation le jour, logistique de marché à la récolte.",
                 "pillars.technology.title": "Technologie hybride intelligente",
@@ -847,11 +990,221 @@
                 "stories.title": "Histoires du terrain",
                 "stories.subtitle": "Portraits et voix qui vous connectent aux personnes derrière chaque tasse.",
                 "join.title": "Rejoignez le mouvement",
-                "join.description": "Une petite action ici a des effets lointains — le bénévolat ou le conseil avec Raíz signifie un changement plus rapide et mesurable pour les familles d'agriculteurs et une expérience pratique de conception de projets où éducation, commerce et technologie se rencontrent.",
+                "join.description": "Une petite action ici a des effets lointains — le bénévolat ou le conseil avec Raíz signifie un changement plus rapide et mesurable pour les familles d'agriculteurs et une expérience pratique de conception de projets où éducation, commerce et technology meet.",
                 "join.volunteer": "Postuler comme Bénévole",
                 "join.advisory": "Postuler au Conseil Consultatif",
                 "join.partner": "Devenir Partenaire",
                 "join.promise": "Nous formons actuellement notre conseil consultatif et planifions notre programme pilote 2026. Rejoignez-nous dans ces étapes fondatrices."
+            },
+            it: {
+                "hero.title": "Radicati in Colombia.<br>Creati per il mondo.",
+                "hero.subtitle": "Rafforziamo i mezzi di sostentamento degli agricoltori combinando conoscenze collaudate con tecnologia dual-use precisa — strumenti che insegnano, proteggono e vendono.",
+                "hero.cta.volunteer": "Volontario",
+                "hero.cta.advisory": "Consiglio Consultivo",
+                "hero.cta.partner": "Partner",
+                "hero.impact": "Unisciti a noi come volontario, consulente o membro del consiglio e aiuta a plasmare un'economia del caffè più equa, costruita con pazienza e qualità.",
+                "why.title": "Perché Esiste Raíz",
+                "why.description": "Il caffè è una conversazione tra terra e persone. Per milioni di piccoli produttori quella conversazione è tesa dalla volatilità — tempo, mercati e distanza. Raíz esiste pour ripristinare l'equilibrio: collegare l'esperienza degli agricoltori con la domanda globale, portare chiarezza alla catena del valore e dare agli agricoltori accesso duraturo e dignitoso ai benefici che il loro lavoro crea.",
+                "why.quote": "\"Una piccola azione qui ha grandi effetti — aiutare gli agricoltori significa aiutare le comunità a prosperare.\"",
+                "why.cta": "Incontra gli Agricoltori",
+                "pillars.title": "Come Creiamo Impatto Duraturo",
+                "pillars.subtitle": "Ci concentriamo su cambiamenti pratici e misurabili — non promesse. Il nostro modello combina:",
+                "pillars.infrastructure.title": "Infrastruttura dual-use",
+                "pillars.infrastructure.description": "Centri comunitari che fungono da torrefattori, centri di formazione e punti di accesso digitale. Questi asset servono sia il commercio che la comunità — educazione di giorno, logistica di mercato al raccolto.",
+                "pillars.technology.title": "Tecnologia ibrida intelligente",
+                "pillars.technology.description": "Immagini satellitari + sensori locali + app leggere offline-first forniscono avvisi meteorologici in tempo real, avvertimenti di malattie e dashboard di salute delle colture — accessibili sotto licenza di accesso equo.",
+                "pillars.collective.title": "Potere collettivo di mercato",
+                "pillars.collective.description": "Contrattazione cooperativa, tracciabilità trasparente dei lotti e storie di origine curate che permettono agli agricoltori di catturare premi dove qualità e provenienza contano.",
+                "pillars.lean.title": "Spesa efficiente",
+                "pillars.lean.description": "Ogni spesa deve dimostrare il suo ritorno in resilienza dell'agricoltore, accesso al mercato or riduzione dei costi. Chiediamo: questo accorcia direttamente il percorso dal raccolto al reddito equo?",
+                "stories.title": "Storie dal campo",
+                "stories.subtitle": "Ritratti e voci che ti collegano alle persone dietro ogni tazza.",
+                "join.title": "Unisciti al movimento",
+                "join.description": "Una piccola azione qui ha grandi effetti — fare volontariato o consulenza con Raíz significa cambiamenti più rapidi e misurabili per le famiglie di agricoltori ed esperienza pratica nella progettazione di progetti dove educazione, commercio e tecnologia si incontrano.",
+                "join.volunteer": "Candidati come Volontario",
+                "join.advisory": "Candidati al Consiglio",
+                "join.partner": "Diventa Partner",
+                "join.promise": "Stiamo attualmente formando il nostro consiglio consultivo e pianificando il nostro programma pilota 2026. Unisciti a noi in queste fasi fondamentali."
+            },
+            de: {
+                "hero.title": "Verwurzelt in Kolumbien.<br>Geschaffen für die Welt.",
+                "hero.subtitle": "Wir stärken die Lebensgrundlagen der Bauern, indem wir bewährtes Wissen mit präziser Dual-Use-Technologie kombinieren — Werkzeuge, die lehren, schützen und verkaufen.",
+                "hero.cta.volunteer": "Freiwillige",
+                "hero.cta.advisory": "Beirat",
+                "hero.cta.partner": "Partner",
+                "hero.impact": "Schließen Sie sich uns als Freiwilliger, Berater oder Vorstandsmitglied an und helfen Sie dabei, eine gerechtere Kaffeewirtschaft zu gestalten, die geduldig und gut aufgebaut ist.",
+                "why.title": "Warum Raíz Existiert",
+                "why.description": "Kaffee ist ein Gespräch zwischen Land und Menschen. Für Millionen von Kleinbauern ist dieses Gespräch durch Volatilität belastet — Wetter, Märkte und Entfernung. Raíz existiert, um das Gleichgewicht wiederherzustellen: Bauernexpertise mit globaler Nachfrage zu verbinden, Klarheit in die Wertschöpfungskette zu bringen und Bauern dauerhaften, würdigen Zugang zu den Vorteilen zu geben, die ihre Arbeit schafft.",
+                "why.quote": "\"Eine kleine Aktion hier hat große Auswirkungen — Bauern zu helfen bedeutet, Gemeinschaften beim Gedeihen zu helfen.\"",
+                "why.cta": "Lernen Sie die Bauern Kennen",
+                "pillars.title": "Wie Wir Nachhaltige Wirkung Schaffen",
+                "pillars.subtitle": "Wir konzentrieren uns auf praktische, messbare Veränderungen — nicht auf Versprechen. Unser Modell kombiniert:",
+                "pillars.infrastructure.title": "Dual-Use-Infrastruktur",
+                "pillars.infrastructure.description": "Gemeindezentren, die als Röstereien, Ausbildungszentren und digitale Zugangspunkte dienen. Diese Anlagen dienen sowohl dem Handel als auch der Gemeinschaft — Bildung am Tag, Marktlogistik zur Erntezeit.",
+                "pillars.technology.title": "Intelligente Hybrid-Technologie",
+                "pillars.technology.description": "Satellitenbilder + lokale Sensoren + leichte Offline-First-Apps bieten Echtzeit-Wetteralarme, Krankheitswarnungen und Pflanzengesundheits-Dashboards — zugänglich unter einer fairen Zugangs-Lizenz.",
+                "pillars.collective.title": "Kollektive Marktmacht",
+                "pillars.collective.description": "Genossenschaftliche Verhandlungen, transparente Lot-Rückverfolgbarkeit und kuratierte Herkunftsgeschichten, die es Bauern ermöglichen, Prämien zu erfassen, wo Qualität und Herkunft wichtig sind.",
+                "pillars.lean.title": "Schlanke Ausgaben",
+                "pillars.lean.description": "Jede Ausgabe must ihre Rendite in Bauernresilienz, Marktzugang oder Kostensenkung beweisen. Wir fragen: Verkürzt dies direkt den Weg von der Ernte zum fairen Einkommen?",
+                "stories.title": "Geschichten vom Feld",
+                "stories.subtitle": "Porträts und Stimmen, die Sie mit den Menschen hinter jeder Tasse verbinden.",
+                "join.title": "Schließen Sie sich der Bewegung an",
+                "join.description": "Eine kleine Aktion hier hat große Auswirkungen — Freiwilligenarbeit oder Beratung bei Raíz bedeutet schnellere, messbare Veränderungen für Bauernfamilien und praktische Erfahrung bei der Gestaltung von Projekten, wo Bildung, Handel und Technologie aufeinandertreffen.",
+                "join.volunteer": "Als Freiwilliger Bewerben",
+                "join.advisory": "Für Beirat Bewerben",
+                "join.partner": "Partner Werden",
+                "join.promise": "Wir bilden derzeit unseren Beirat und planen unser Pilotprogramm 2026. Begleiten Sie uns in diesen grundlegenden Phasen."
+            },
+            ar: {
+                "hero.title": "متجذرون في كولومبيا.<br>مصنوعون للعالم.",
+                "hero.subtitle": "نحن نقوي سبل عيش المزارعين من خلال الجمع بين المعرفة المجربة والتكنولوجيا المزدوجة الاستخدام الدقيقة — أدوات تعلم وتحمي وتبيع.",
+                "hero.cta.volunteer": "متطوع",
+                "hero.cta.advisory": "المجلس الاستشاري",
+                "hero.cta.partner": "شراكة",
+                "hero.impact": "انضم إلينا كمتطوع أو مستشار أو عضو مجلس إدارة وساعد في تشكيل اقتصاد قهوة أكثر عدالة، بُني بصبر وجودة.",
+                "why.title": "لماذا تُوجد رايز",
+                "why.description": "القهوة هي حوار بين الأرض والناس. بالنسبة لملايين المزارعين الصغار، هذا الحوار متوتر بسبب التقلبات — الطقس والأسواق والمسافة. رايز موجودة لاستعادة التوازن: ربط خبرة المزارعين بالطلب العالمي، وإضفاء الوضوح على سلسلة القيمة، ومنح المزارعين وصولاً دائماً وكريماً للفوائد التي يخلقها عملهم.",
+                "why.quote": "\"عمل صغير هنا له تأثير كبير — مساعدة المزارعين تعني مساعدة المجتمعات على الازدهار.\"",
+                "why.cta": "التق بالمزارعين",
+                "pillars.title": "كيف نخلق تأثيراً دائماً",
+                "pillars.subtitle": "نحن نركز على التغيير العملي القابل للقياس — وليس الوعود. نموذجنا يجمع:",
+                "pillars.infrastructure.title": "بنية تحتية مزدوجة الاستخدام",
+                "pillars.infrastructure.description": "مراكز مجتمعية تعمل كمحمصات ومراكز تدريب ونقاط وصول رقمية. هذه الأصول تخدم التجارة والمجتمع معاً — التعليم نهاراً، لوجستيات السوق في الحصاد.",
+                "pillars.technology.title": "تكنولوجيا هجينة ذكية",
+                "pillars.technology.description": "صور الأقمار الصناعية + أجهزة الاستشعار المحلية + تطبيقات خفيفة تعمل بدون اتصال توفر تنبيهات الطقس في الوقت الفعلي، تحذيرات الأمراض، ولوحات معلومات صحة المحاصيل — متاحة تحت رخصة وصول عادل.",
+                "pillars.collective.title": "قوة السوق الجماعية",
+                "pillars.collective.description": "التفاوض التعاوني، تتبع الدفعات الشفاف، وقصص المنشأ المنسقة التي تسمح للمزارعين بالحصول على علاوات حيث تهم الجودة والمصدر.",
+                "pillars.lean.title": "إنفاق فعال",
+                "pillars.lean.description": "كل نفقة يجب أن تثبت عائدها في مرونة المزارع، الوصول للسوق، أو تقليل التكاليف. نسأل: هل يقصر هذا مباشرة المسار من الحصاد إلى الدخل العادل؟",
+                "stories.title": "حكايات من الحقل",
+                "stories.subtitle": "صور وأصوات تربطك بالأشخاص وراء كل كوب.",
+                "join.title": "انضم للحركة",
+                "join.description": "عمل صغير هنا له تأثير كبير — التطوع أو الاستشارة مع رايز يعني تغييرات أسرع وقابلة للقياس لعائلات المزارعين وخبرة عملية في تصميم مشاريع حيث التعليم والتجارة والتكنولوجيا تلتقي.",
+                "join.volunteer": "التقدم كمتطوع",
+                "join.advisory": "التقدم للمجلس",
+                "join.partner": "كن شريكاً",
+                "join.promise": "نحن الآن نُشكل مجلسنا الاستشاري ونخطط لبرنامجنا التجريبي 2026. انضم إلينا في هذه المراحل التأسيسية."
+            },
+            ja: {
+                "hero.title": "コロンビアに根ざし、<br>世界のために創られて。",
+                "hero.subtitle": "私たちは、時間をかけて実証された知識と正確なデュアルユース技術を組み合わせて、農家の生計を強化します — 教え、守り、販売するツールです。",
+                "hero.cta.volunteer": "ボランティア",
+                "hero.cta.advisory": "アドバイザリーボードに参加",
+                "hero.cta.partner": "私たちと提携",
+                "hero.impact": "ボランティア、アドバイザー、または理事会メンバーとして参加し、より公平なコーヒー経済の形成を手伝ってください。忍耐強く、よく構築されています。",
+                "why.title": "Raízが存在する理由",
+                "why.description": "コーヒーは、土地と人々の間の対話です。何百万人もの小規模農家にとって、その対話は変動性 — 天候、市場、距離 — によって緊張しています。Raízはバランスを回復するために存在します：農家の専門知識を世界の需要と結びつけ、バリューチェーンに明確さをもたらし、農家が彼らの仕事が生み出す利益への持続的で尊厳のあるアクセスを提供します。",
+                "why.quote": "\"ここでの小さな行動は遠くまで波及します — 農家を助けることは、コミュニティの繁栄を助けることを意味します。\"",
+                "why.cta": "農家に会う",
+                "pillars.title": "持続的な影響をどのように創出するか",
+                "pillars.subtitle": "私たちは実践的で測定可能な変化に焦点を当てています — 約束ではありません。私たちのモデルは以下を組み合わせます：",
+                "pillars.infrastructure.title": "デュアルユースインフラ",
+                "pillars.infrastructure.description": "焙煎機、トレーニングセンター、デジタルアクセスポイントとして機能するコミュニティハブ。これらの資産は商業とコミュニティの両方に役立ちます — 昼間は教育、収穫時には市場物流。",
+                "pillars.technology.title": "スマートなハイブリッド技術",
+                "pillars.technology.description": "衛星画像 + ローカルセンサー + 軽量のオフラインファーストアプリは、リアルタイムの天候警報、病気の警告、作物の健康ダッシュボードを提供します — 公平なアクセスライセンスの下でアクセス可能。",
+                "pillars.collective.title": "集合的な市場力",
+                "pillars.collective.description": "協同組合的交渉、透明なロットの追跡可能性、および品質と原産地が重要な場合に農家がプレミアムを獲得できるようにするキュレーションされた原産地の物語。",
+                "pillars.lean.title": "リーンな支出",
+                "pillars.lean.description": "すべての支出は、農家の回復力、市場アクセス、またはコスト削減におけるリターンを証明しなければなりません。私たちは問います：これは収穫から公平な収入への道筋を直接短縮しますか？",
+                "stories.title": "現場からのストーリー",
+                "stories.subtitle": "各杯の背後にいる人々とあなたをつなぐポートレートと声。",
+                "join.title": "運動に参加しよう",
+                "join.description": "ここでの小さな行動は遠くまで波及します — Raízでのボランティア活動やアドバイザリー活動は、農家家族のためのより速く、測定可能な変化、そして教育、商業、技術が交差するプロジェクトを設計する実践的な経験を意味します。",
+                "join.volunteer": "ボランティアに申し込む",
+                "join.advisory": "アドバイザリーボードに申し込む",
+                "join.partner": "私たちと提携する",
+                "join.promise": "私たちは現在、アドバイザリーボードを形成し、2026年のパイロットプログラムを計画しています。これらの基礎的な段階で私たちに参加してください。"
+            },
+            ko: {
+                "hero.title": "콜롬비아에 뿌리를 둔,<br>세계를 위해 만들어졌습니다.",
+                "hero.subtitle": "우리는 시간이 검증된 지식과 정밀한 이중 사용 기술을 결합하여 농가 생계를 강화합니다 — 가르치고, 보호하고, 판매하는 도구입니다.",
+                "hero.cta.volunteer": "자원봉사자",
+                "hero.cta.advisory": "자문위원회 참여",
+                "hero.cta.partner": "우리와 협력하기",
+                "hero.impact": "자원봉사자, 자문위원 또는 이사회 구성원으로 참여하여 더 공정한 커피 경제를 형성하는 데 도움을 주세요. 인내심을 가지고 잘 구축되었습니다.",
+                "why.title": "Raíz가 존재하는 이유",
+                "why.description": "커피는 땅과 사람 사이의 대화입니다. 수백만 소규모 농가에게 그 대화는 변동성 — 날씨, 시장, 거리 — 으로 인해 팽팽합니다. Raíz는 균형을 회복하기 위해 존재합니다: 농가의 전문 지식을 세계적 수요와 연결하고, 가치 사슬에 명확성을 부여하며, 농가가 그들의 작업이 창출하는 혜택에 지속적이고 존엄적인 접근을 제공합니다.",
+                "why.quote": "\"여기의 작은 행동은 멀리까지 파급됩니다 — 농가를 돕는 것은 공동체의 번영을 돕는 것을 의미합니다.\"",
+                "why.cta": "농가 만나기",
+                "pillars.title": "지속적인 영향력을 창출하는 방법",
+                "pillars.subtitle": "우리는 약속이 아닌 실용적이고 측정 가능한 변화에 중점을 둡니다. 우리의 모델은 다음을 결합합니다:",
+                "pillars.infrastructure.title": "이중 사용 인프라",
+                "pillars.infrastructure.description": "로스터리, 교육 센터 및 디지털 접근 지점 역할을 하는 커뮤니티 허브. 이러한 자산은 상업과 커뮤니티 모두에 서비스합니다 — 낮에는 교육, 수확 시에는 시장 물류.",
+                "pillars.technology.title": "스마트 하이브리드 기술",
+                "pillars.technology.description": "위성 이미지 + 현지 센서 + 경량 오프라인 우선 앱은 실시간 기상 경보, 질병 경고 및 작물 건강 대시보드를 제공합니다 — 공정 접근 라이선스 하에 접근 가능.",
+                "pillars.collective.title": "집단적 시장력",
+                "pillars.collective.description": "협동 조합 교섭, 투명한 로트 추적성, 그리고 품질과 원산지가 중요한 경우 농가가 프리미엄을 얻을 수 있도록 큐레이팅된 원산지 이야기.",
+                "pillars.lean.title": "린 지출",
+                "pillars.lean.description": "모든 지출은 농가 회복력, 시장 접근성 또는 비용 절감에서 수익을 입증해야 합니다. 우리는 묻습니다: 이것이 수확에서 공정한 소득으로의 경로를 직접 단축합니까?",
+                "stories.title": "현장에서의 이야기",
+                "stories.subtitle": "각 컵 뒤에 있는 사람들과 당신을 연결하는 초상화와 목소리.",
+                "join.title": "운동에 참여하세요",
+                "join.description": "여기의 작은 행동은 멀리까지 파급됩니다 — Raíz에서 자원봉사하거나 자문하는 것은 농가 가족을 위한 더 빠르고 측정 가능한 변화와 교육, 상업 및 기술이 만나는 프로젝트를 설계하는 실무 경험을 의미합니다.",
+                "join.volunteer": "자원봉사 신청",
+                "join.advisory": "자문위원회 신청",
+                "join.partner": "우리와 협력하기",
+                "join.promise": "우리는 현재 자문위원회를 구성하고 2026년 파일럿 프로그램을 계획하고 있습니다. 이러한 초기 단계에서 우리와 함께하세요."
+            },
+            zh: {
+                "hero.title": "植根于哥伦比亚。<br>为世界精心打造。",
+                "hero.subtitle": "我们通过结合经过时间检验的知识和精确的双重用途技术来加强农民的生计 — 这些工具可以教授、保护和销售。",
+                "hero.cta.volunteer": "志愿者",
+                "hero.cta.advisory": "加入咨询委员会",
+                "hero.cta.partner": "与我们合作",
+                "hero.impact": "作为志愿者、顾问或董事会成员加入我们，帮助塑造一个更公平的咖啡经济，耐心而良好地建设。",
+                "why.title": "Raíz 存在的原因",
+                "why.description": "咖啡是土地与人之间的对话。对于数百万小农来说，这种对话因波动性而紧张 — 天气、市场和距离。Raíz 的存在是为了恢复平衡：将农民的专业知识与全球需求联系起来，为价值链带来清晰度，并使农民持久、有尊严地获得他们工作创造的福利。",
+                "why.quote": "\"这里的小行动会产生深远影响 — 帮助农民意味着帮助社区繁荣。\"",
+                "why.cta": "认识农民",
+                "pillars.title": "我们如何创造持久影响",
+                "pillars.subtitle": "我们专注于实际、可衡量的变化 — 而不是承诺。我们的模型结合了：",
+                "pillars.infrastructure.title": "双重用途基础设施",
+                "pillars.infrastructure.description": "作为烘焙厂、培训中心和数字接入点的社区中心。这些资产既服务于商业也服务于社区 — 白天教育，收获时市场物流。",
+                "pillars.technology.title": "智能混合技术",
+                "pillars.technology.description": "卫星图像 + 本地传感器 + 轻量级离线优先应用程序提供实时天气警报、疾病警告和作物健康仪表板 — 在公平访问许可下可访问。",
+                "pillars.collective.title": "集体市场力量",
+                "pillars.collective.description": "合作谈判、透明的批次可追溯性以及精心策划的原产地故事，使农民能够在质量和原产地重要的地方获得溢价。",
+                "pillars.lean.title": "精益支出",
+                "pillars.lean.description": "每项支出必须证明其在农民韧性、市场准入或成本降低方面的回报。我们问：这能直接缩短从收获到公平收入的路径吗？",
+                "stories.title": "来自田野的故事",
+                "stories.subtitle": "将您与每杯咖啡背后的人们联系起来的肖像和声音。",
+                "join.title": "加入这场运动",
+                "join.description": "这里的小行动会产生深远影响 — 在 Raíz 做志愿者或提供咨询意味着为农民家庭带来更快、可衡量的变化，以及在教育、商业和技术交汇处设计项目的实践经验。",
+                "join.volunteer": "申请志愿者",
+                "join.advisory": "申请咨询委员会",
+                "join.partner": "与我们合作",
+                "join.promise": "我们目前正在组建我们的咨询委员会并规划我们的 2026 年试点计划。在这些基础阶段加入我们。"
+            },
+            hi: {
+                "hero.title": "कोलंबिया में स्थित।<br>दुनिया के लिए तैयार।",
+                "hero.subtitle": "हम समय-परीक्षित ज्ञान और सटीक, दोहरे उपयोग वाली प्रौद्योगिकी को संयोजित करके किसानों की आजीविका को मजबूत करते हैं — ऐसे उपकरण जो सिखाते हैं, सुरक्षित करते हैं और बेचते हैं।",
+                "hero.cta.volunteer": "स्वयंसेवक",
+                "hero.cta.advisory": "सलाहकार बोर्ड में शामिल हों",
+                "hero.cta.partner": "हमारे साथ साझेदारी करें",
+                "hero.impact": "स्वयंसेवक, सलाहकार या बोर्ड सदस्य के रूप में हमसे जुड़ें और एक निष्पक्ष कॉफी अर्थव्यवस्था को आकार देने में मदद करें, जो धैर्यपूर्वक और अच्छी तरह से बनाई गई है।",
+                "why.title": "राइज़ क्यों मौजूद है",
+                "why.description": "कॉफी भूमि और लोगों के बीच एक बातचीत है। लाखों छोटे किसानों के लिए यह बातचीत अस्थिरता — मौसम, बाजार और दूरी — से तनावग्रस्त है। राइज़ संतुलन बहाल करने के लिए मौजूद है: किसान विशेषज्ञता को वैश्विक मांग से जोड़ने, मूल्य श्रृंखला में स्पष्टता लाने, और किसानों को उनके काम से创建 लाभों तक टिकाऊ, गरिमापूर्ण पहुंच प्रदान करने के लिए।",
+                "why.quote": "\"यहां एक छोटी सी कार्रवाई दूर तक प्रभाव डालती है — किसानों की मदद करने का मतलब है समुदायों को फलने-फूलने में मदद करना।\"",
+                "why.cta": "किसानों से मिलें",
+                "pillars.title": "हम स्थायी प्रभाव कैसे बनाते हैं",
+                "pillars.subtitle": "हम व्यावहारिक, मापने योग्य परिवर्तन पर ध्यान केंद्रित करते हैं — वादे नहीं। हमारा मॉडल संयोजित करता है:",
+                "pillars.infrastructure.title": "दोहरे उपयोग वाला बुनियादी ढांचा",
+                "pillars.infrastructure.description": "सामुदायिक केंद्र जो रोस्टर, प्रशिक्षण केंद्र और डिजिटल पहुंच बिंदु के रूप में कार्य करते हैं। ये संपत्तियां वाणिज्य और समुदाय दोनों की सेवा करती हैं — दिन में शिक्षा, फसल के समय बाजार की रसद।",
+                "pillars.technology.title": "स्मार्ट, संकर प्रौद्योगिकी",
+                "pillars.technology.description": "उपग्रह इमेजरी + स्थानीय सेंसर + हल्के, ऑफलाइन-फर्स्ट ऐप्स रीयल-टाइम मौसम चेतावनी, बीमारी की चेतावनी और फसल स्वास्थ्य डैशबोर्ड प्रदान करते हैं — एक निष्पक्ष-पहुंच लाइसेंस के तहत सुलभ।",
+                "pillars.collective.title": "सामूहिक बाजार शक्ति",
+                "pillars.collective.description": "सहकारी सौदेबाजी, पारदर्शी लॉट ट्रेसएबिलिटी, और क्यूरेटेड मूल कहानियां जो किसानों को प्रीमियम प्राप्त करने allow करती हैं जहां गुणवत्ता और मूल महत्वपूर्ण हैं।",
+                "pillars.lean.title": "लीन खर्च",
+                "pillars.lean.description": "हर खर्च को किसान लचीलापन, बाजार पहुंच, या लागत में कमी में अपनी वापसी साबित करनी must। हम पूछते हैं: क्या यह सीधे फसल से निष्पक्ष आय के रास्ते को छोटा करता है?",
+                "stories.title": "मैदान से कहानियां",
+                "stories.subtitle": "चित्र और आवाज़ें जो आपको हर कप के पीछे के लोगों से जोड़ती हैं।",
+                "join.title": "आंदोलन में शामिल हों",
+                "join.description": "यहां एक छोटी सी कार्रवाई दूर तक प्रभाव डालती है — राइज़ के साथ स्वयंसेवक या सलाहकार के रूप में काम करने का मतलब है किसान परिवारों के लिए तेज, मापने योग्य परिवर्तन और शिक्षा, वाणिज्य और प्रौद्योगिकी के मिलन स्थल पर परियोजनाओं को डिजाइन करने का hands-on अनुभव।",
+                "join.volunteer": "स्वयंसेवक के लिए आवेदन करें",
+                "join.advisory": "सलाहकार बोर्ड के लिए आवेदन करें",
+                "join.partner": "हमारे साथ साझेदारी करें",
+                "join.promise": "हम वर्तमान में अपने सलाहकार बोर्ड का गठन कर रहे हैं और अपने 2026 पायलट program की योजना बना रहे हैं। इन foundational stages में हमसे जुड़ें।"
             }
         };
 
